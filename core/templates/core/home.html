@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %} {% load static %} {% block title %}Inicio{%endblock %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'core/css/home.css' %}" />
+
+<div class="container container_1">
+  <div style="padding-top: 50px; text-align: center">
+    <header class="bg-primary text-white text-center py-5">
+      <div class="texto_bienvenido">
+        <h1>Bienvenido a Academia Acordeón</h1>
+        <p>Aprende a tocar el acordeón con los mejores maestros</p>
+        <a href="#" class="btn btn-light">Conocenos</a>
+      </div>
+    </header>
+
+    <!-- Sección de Cursos -->
+    <section class="container container_2 my-5 text-center">
+      <h2>Nuestros Cursos</h2>
+      <p>Desde nivel básico hasta avanzado</p>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Principiantes</h3>
+          <p>Aprende los fundamentos del acordeón.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Intermedio</h3>
+          <p>Mejora tu técnica y repertorio.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Avanzado</h3>
+          <p>Domina la interpretación profesional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="bg-light py-5 text-center">
+      <h2>Lo que dicen nuestros estudiantes</h2>
+      <p>"Una experiencia increíble, aprendí mucho en poco tiempo!"</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>© 2025 Academia Acordeón - Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</div>
+{% endblock %}
