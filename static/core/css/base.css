@@ -1,4 +1,57 @@
-.navbar {
-  background-color: #f2cc39;
+body, html {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
+.navbar {
+  background-color:  #f2cc39;
+  
+}
+
+.dropdown-menu {
+  background-color: #f2cc39;
+  color: #000; /* Para asegurar contraste con el fondo */
+}
+
+
+
+.nav-link{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700 ;
+  font-size: large;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.logo{
+  max-height: 120px;
+  margin-left: 30px;
+ 
+}
+
+.btn{
+  background-color: #f2cc39;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700 ;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: black;
+  padding: 10px;
+  border: none;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 

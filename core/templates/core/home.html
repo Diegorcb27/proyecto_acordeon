@@ -1,33 +1,55 @@
-{% extends 'core/base.html' %} {% load static %} {% block title %}Inicio{%endblock %} {% block content %}
+{% extends 'core/base.html' %} {% load static %} {% block title %} Inicio {% endblock %} {% block content %}
 
 <link rel="stylesheet" href="{% static 'core/css/home.css' %}" />
 
-<div class="container container_1">
+<div class="container-fluid container_1" style="padding: 0%">
   <div style="padding-top: 50px; text-align: center">
     <header class="bg-primary text-white text-center py-5">
       <div class="texto_bienvenido">
-        <h1>Bienvenido a Academia Acordeón</h1>
+        <h1>BIENVENIDO A</h1>
+        <h1>LA ACADEMIA DEL ACORDEÓN</h1>
         <p>Aprende a tocar el acordeón con los mejores maestros</p>
-        <a href="#" class="btn btn-light">Conocenos</a>
+        <a href="#" class="btn btn-warning">CONOCENOS</a>
       </div>
     </header>
 
-    <!-- Sección de Cursos -->
     <section class="container container_2 my-5 text-center">
-      <h2>Nuestros Cursos</h2>
+      <h2 class="title">Nuestros Cursos</h2>
       <p>Desde nivel básico hasta avanzado</p>
-      <div class="row">
+      <div class="row g-4">
+        <!-- g-4 agrega espacio entre tarjetas -->
         <div class="col-md-4">
-          <h3>Principiantes</h3>
-          <p>Aprende los fundamentos del acordeón.</p>
+          <div class="card curso-card text-dark bg-warning h-100">
+            <div class="card-body">
+              <h3 class="card-title">Principiantes  <img src="{% static 'core/img/acordeon_icono.png' %}" alt="icono_acordeon" class="icono-acordeon" ></h3>
+              <p class="card-text">Aprende los fundamentos del acordeón.</p>
+              <div>
+                <img src="{% static 'core/img/principiante.jpg' %}" alt="" class="img-fluid rounded mx-auto d-block">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <h3>Intermedio</h3>
-          <p>Mejora tu técnica y repertorio.</p>
+          <div class="card curso-card text-dark bg-warning h-100">
+            <div class="card-body">
+              <h3 class="card-title">Intermedio <img src="{% static 'core/img/acordeon_icono.png' %}" alt="icono_acordeon" class="icono-acordeon" ></h3>
+              <p class="card-text">Mejora tu técnica y repertorio.</p>
+              <div>
+                <img src="{% static 'core/img/intermedio2.jpg' %}" alt="" class="img-fluid rounded mx-auto d-block">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <h3>Avanzado</h3>
-          <p>Domina la interpretación profesional.</p>
+          <div class="card curso-card text-dark bg-warning h-100">
+            <div class="card-body">
+              <h3 class="card-title">Avanzado  <img src="{% static 'core/img/acordeon_icono.png' %}" alt="icono_acordeon" class="icono-acordeon" ></h3>
+              <p class="card-text">Domina la interpretación profesional.</p>
+              <div>
+                <img src="{% static 'core/img/avanzado.jpg' %}" alt="" class="img-fluid rounded mx-auto d-block">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
