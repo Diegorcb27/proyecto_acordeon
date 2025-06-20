@@ -90,19 +90,50 @@
       </nav>
     </header>
     <main>{% block content %} {% endblock %}</main>
-    <footer>
-      <!-- place footer here -->
-      <!-- place footer here -->
-      <div class="container">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-            <ul>
-              <li><a href="/terminos">Términos de uso</a></li>
-              <li><a href="/privacidad">Política de privacidad</a></li>
-              <li><a href="/contacto">Contacto</a></li>
+    <footer class="footer bg-dark pt-4">
+      <div class="container bg-dark  footer">
+        <div class="row text-left text-md-left">
+          <!-- Logo y Misión -->
+          <div class="col-md-4 mb-3">
+            <img
+              src="{% static 'core/img/acordeon2.PNG' %}"
+              alt="Logo Academia Acordeón"
+              class="mb-2"
+              style="max-width: 150px"
+            />
+            <p class="text-foot">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <!-- Sitemap -->
+          <div class="col-md-4 mb-3">
+            <h5 class="title-foot text-uppercase">Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="/" class="text-foot">Inicio</a></li>
+              <li><a href="/nosotros" class="text-foot">Nosotros</a></li>
+              <li><a href="/cursos" class="text-foot">Cursos</a></li>
+              <li><a href="/eventos" class="text-foot">Eventos</a></li>
+              <li><a href="/contacto" class="text-foot">Contacto</a></li>
             </ul>
           </div>
+
+          <!-- Contacto -->
+          <div class="col-md-4 mb-3">
+            <h5 class="title-foot text-uppercase">Contáctanos</h5>
+            <ul class="list-unstyled text-foot">
+              <li>Church on the Rock Katy</li>
+              <li>433 Barker Cypress Rd, Houston, TX 77094</li>
+              <li>Teléfono: (0212) 123-4567</li>
+              <li>Email: Theaccordionacademy@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-3 pt-3">
+          <p class="text-foot mb-0">
+            © 2025 Academia Acordeón - Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>

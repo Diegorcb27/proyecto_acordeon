@@ -7,11 +7,11 @@ body{
 
 .bg-primary {
   position: relative;
-  background-image: url('/static/core/img/acordeon2.jpg');
+  background-image: url('/static/core/img/bienvenido.jpeg');
   background-size: cover; /* Mantiene el tamaño adecuado sin recortes */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat;
-  height: 50vh; /* Mantiene la altura completa */
+  height: 70vh; /* Mantiene la altura completa */
   width: 100%; /* Mantiene el ancho completo */;
 }
 
@@ -62,10 +62,9 @@ body{
 .nivel-description, .welcome-description{
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight:500 ;
+  font-weight:400 ;
   color: #ffffff;
   font-size: 30px;
-  font-weight: 100;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -74,7 +73,7 @@ body{
 .card-title, h2{
     font-family: "Montserrat", sans-serif;
     color: #212529;
-    font-size: 28px;
+    font-size: 35px;
     font-weight:600;
     font-style: normal;
     font-variation-settings:
@@ -92,6 +91,18 @@ p{
     "wdth" 100;
 }
 
+.curso-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.curso-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
 
 
 
@@ -108,6 +119,73 @@ p{
     align-items: center;
     text-align: center;
 }
+
+.academia-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.academia-texto {
+  flex: 1 1 400px;
+  background-color: #ffc107;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.academia-texto h1 {
+  margin-top: 0;
+  font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #212529;
+    font-weight:600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100
+}
+
+.academia-texto h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.academia-texto p {
+  margin-bottom: 1rem;
+}
+
+.academia-texto ul {
+  padding-left: 1.2rem;
+}
+
+.academia-texto li {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  color: #212529;
+  font-size: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.academia-img-contenedor {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.academia-img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
 
 .img_testimonio {
     width: 300px;

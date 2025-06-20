@@ -54,4 +54,35 @@ body, html {
   transition: 0.3s;
 }
 
+.text-foot{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.list-unstyled{
+margin-top:  60px;
+}
+
+.title-foot{
+   font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight:600;
+    font-style: normal;
+    
+    font-variation-settings:
+      "wdth" 100
+}
+
+li, a{
+  margin: 5px;
+  text-decoration: none;
+}
 
