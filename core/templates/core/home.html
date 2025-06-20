@@ -6,25 +6,39 @@
   <div style="padding-top: 50px; text-align: center">
     <header class="bg-primary text-white text-center py-5">
       <div class="texto_bienvenido">
-        <h1>BIENVENIDO A</h1>
-        <h1>LA ACADEMIA DEL ACORDEÓN</h1>
-        <p>Aprende a tocar el acordeón con los mejores maestros</p>
-        <a href="#" class="btn btn-warning">CONOCENOS</a>
+        <h1><b>BIENVENIDO A</b></h1>
+        <h1><b>LA ACADEMIA DEL ACORDEÓN</b></h1>
+        <p class="welcome-description">Aprende a tocar el acordeón con los mejores maestros</p>
+        <a href="#" class="btn btn-warning">MAYOR INFO...</a>
       </div>
     </header>
 
     <section class="container container_2 my-5 text-center">
       <h2 class="title">Nuestros Cursos</h2>
-      <p>Desde nivel básico hasta avanzado</p>
+      <p class="nivel-description">Desde nivel básico hasta avanzado</p>
       <div class="row g-4">
         <!-- g-4 agrega espacio entre tarjetas -->
         <div class="col-md-4">
           <div class="card curso-card text-dark bg-warning h-100">
             <div class="card-body">
-              <h3 class="card-title">Principiantes  <img src="{% static 'core/img/acordeon_icono.png' %}" alt="icono_acordeon" class="icono-acordeon" ></h3>
-              <p class="card-text">Aprende los fundamentos del acordeón.</p>
+              <h3 class="card-title">
+                Principiantes
+                <img
+                  src="{% static 'core/img/acordeon_icono.png' %}"
+                  alt="icono_acordeon"
+                  class="icono-acordeon"
+                />
+              </h3>
+              <p class="card-text">
+                Aprende los fundamentos del acordeón y mejora tu técnica básica
+                rápidamente.
+              </p>
               <div>
-                <img src="{% static 'core/img/principiante.jpg' %}" alt="" class="img-fluid rounded mx-auto d-block">
+                <img
+                  src="{% static 'core/img/principiante.jpg' %}"
+                  alt=""
+                  class="img-fluid rounded mx-auto d-block"
+                />
               </div>
             </div>
           </div>
@@ -32,10 +46,24 @@
         <div class="col-md-4">
           <div class="card curso-card text-dark bg-warning h-100">
             <div class="card-body">
-              <h3 class="card-title">Intermedio <img src="{% static 'core/img/acordeon_icono.png' %}" alt="icono_acordeon" class="icono-acordeon" ></h3>
-              <p class="card-text">Mejora tu técnica y repertorio.</p>
+              <h3 class="card-title">
+                Intermedio
+                <img
+                  src="{% static 'core/img/acordeon_icono.png' %}"
+                  alt="icono_acordeon"
+                  class="icono-acordeon"
+                />
+              </h3>
+              <p class="card-text">
+                Mejora tu técnica y repertorio mientras perfeccionas tu estilo
+                musical.
+              </p>
               <div>
-                <img src="{% static 'core/img/intermedio2.jpg' %}" alt="" class="img-fluid rounded mx-auto d-block">
+                <img
+                  src="{% static 'core/img/intermedio2.jpg' %}"
+                  alt=""
+                  class="img-fluid rounded mx-auto d-block"
+                />
               </div>
             </div>
           </div>
@@ -43,10 +71,23 @@
         <div class="col-md-4">
           <div class="card curso-card text-dark bg-warning h-100">
             <div class="card-body">
-              <h3 class="card-title">Avanzado  <img src="{% static 'core/img/acordeon_icono.png' %}" alt="icono_acordeon" class="icono-acordeon" ></h3>
-              <p class="card-text">Domina la interpretación profesional.</p>
+              <h3 class="card-title">
+                Avanzado
+                <img
+                  src="{% static 'core/img/acordeon_icono.png' %}"
+                  alt="icono_acordeon"
+                  class="icono-acordeon"
+                />
+              </h3>
+              <p class="card-text">
+                Domina la ejecución del instrumento a un nivel profesional.
+              </p>
               <div>
-                <img src="{% static 'core/img/avanzado.jpg' %}" alt="" class="img-fluid rounded mx-auto d-block">
+                <img
+                  src="{% static 'core/img/avanzado.jpg' %}"
+                  alt=""
+                  class="img-fluid rounded mx-auto d-block"
+                />
               </div>
             </div>
           </div>
@@ -54,10 +95,77 @@
       </div>
     </section>
 
+    <!-- por que escoger la academia -->
+    <section></section>
+
     <!-- Testimonios -->
-    <section class="bg-light py-5 text-center">
+    <section class="bg-warning py-5">
       <h2>Lo que dicen nuestros estudiantes</h2>
       <p>"Una experiencia increíble, aprendí mucho en poco tiempo!"</p>
+      <div class="container text-center">
+        <div class="row" style="height: 800px">
+          <div class="col student-card align-self-start">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_1.jpg' %}"
+              class="img_testimonio"
+              alt="Estudiante 1"
+            />
+            <img
+              src="{% static 'core/img/testimonios/comillas.png' %}"
+              class="img_comillas"
+              alt="comillas"
+            />
+            <p class="testi-text">
+              "Excelente curso, me ayudó a mejorar rápidamente en mi aprendizaje
+              musical. Las explicaciones son muy claras y fáciles de entender,
+              incluso para quienes comienzan desde cero. Me sentí motivado en
+              cada clase gracias al enfoque práctico y a la atención
+              personalizada. Sin duda lo recomiendo para principiantes y
+              avanzados."
+            </p>
+            <p class="student-name"><b>Ana</b></p>
+          </div>
+          <div class="col student-card align-self-center">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_2.jpg' %}"
+              class="img_testimonio"
+              alt="Estudiante 2"
+            />
+            <img
+              src="{% static 'core/img/testimonios/comillas.png' %}"
+              class="img_comillas"
+              alt="comillas"
+            />
+            <p class="testi-text">
+              "Las explicaciones son muy claras y prácticas. Me ayudaron a
+              entender conceptos que antes me costaban mucho. Todo se enseña con
+              ejemplos útiles y lenguaje sencillo. Sin duda, una excelente forma
+              de aprender música desde cero."
+            </p>
+            <p class="student-name"><b>Lucila</b></p>
+          </div>
+          <div class="col student-card align-self-end">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_3.jpg' %}"
+              class="img_testimonio"
+              alt="Estudiante 3"
+            />
+            <img
+              src="{% static 'core/img/testimonios/comillas.png' %}"
+              class="img_comillas"
+              alt="comillas"
+            />
+            <p class="testi-text">
+              "Lo recomiendo totalmente para principiantes y avanzados. El
+              contenido está muy bien estructurado y se adapta a todos los
+              niveles. Las clases son dinámicas, con explicaciones fáciles de
+              entender. Me ayudó a progresar mucho más rápido de lo que
+              esperaba."
+            </p>
+            <p class="student-name"><b>Jose</b></p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
