@@ -27,11 +27,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- redes sociales -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body style="padding: 0%">
     <!-- <img src="{% static 'core/img/acordeon.jpg' %}" alt=""> -->
     <header>
+      <!-- logos redes sociales -->
+      <div class="container">
+        <div class="d-flex flex-row justify-content-between justify-content-lg-end align-items-center redes">
+          <div class="p-2">Síguenos:</div>
+          <div class="p-2 mt-2"><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></div>
+          <div class="p-2 mt-2"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></div>
+          <div class="p-2 mt-2"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></div>
+          <div class="p-2 mt-2"><a href=""><ion-icon name="logo-youtube"></ion-icon></a></div>
+        </div>
+      </div>
       <!-- place navbar here -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -91,7 +111,7 @@
     </header>
     <main>{% block content %} {% endblock %}</main>
     <footer class="footer bg-dark pt-4">
-      <div class="container bg-dark  footer">
+      <div class="container bg-dark footer">
         <div class="row text-left text-md-left">
           <!-- Logo y Misión -->
           <div class="col-md-4 mb-3">
@@ -102,9 +122,26 @@
               style="max-width: 150px"
             />
             <p class="text-foot">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Únete a nuestra misión. Inspiremos juntos a las nuevas
+              generaciones. Cada acorde, cada nota, construye un camino hacia un
+              mañana lleno de oportunidades.
             </p>
+            <div
+              class="d-flex flex-row justify-content-between justify-content-lg- align-items-center redes bg-dark"
+            >
+              <div class="p-2 mt-2">
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+              </div>
+              <div class="p-2 mt-2">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+              </div>
+              <div class="p-2 mt-2">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+              </div>
+              <div class="p-2 mt-2">
+                <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+            </div>
           </div>
 
           <!-- Sitemap -->

@@ -9,9 +9,9 @@ body{
   position: relative;
   background-image: url('/static/core/img/bienvenido.jpeg');
   background-size: cover; /* Mantiene el tamaño adecuado sin recortes */
-  background-position: center; /* Centra la imagen */
+  background-position: center top; /* Centra la imagen */
   background-repeat: no-repeat;
-  height: 70vh; /* Mantiene la altura completa */
+  height: 85vh; /* Mantiene la altura completa */
   width: 100%; /* Mantiene el ancho completo */;
 }
 
