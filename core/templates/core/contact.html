@@ -1,0 +1,78 @@
+{% extends 'core/base.html' %} {% load static %} {% block title %} Inicio {% endblock %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'core/css/contact.css' %}" />
+
+<div class="container-fluid container_1" style="padding: 0%">
+  <div style="text-align: center">
+    <header class="bg-primary text-white text-center py-5">
+     
+     
+    </header>
+
+    <section class="container-fluid container_2 text-center">
+      <h2 class="title">Contáctenos</h2>
+    </section>
+
+    <section class="container-fluid container_3 my-5 text-center">
+        <div class="container">
+        <div class="row justify-content-center">
+          <!-- Testimonio 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_1.jpg' %}"
+              class="img_testimonio"
+              alt="Estudiante 1"
+            />
+            <i class='bx  bx-location-alt-2'  ></i> 
+            <p class="testi-text">
+              "Excelente curso, me ayudó a mejorar rápidamente en mi aprendizaje
+              musical. Las explicaciones son muy claras y fáciles de entender,
+              incluso para quienes comienzan desde cero. Me sentí motivado en
+              cada clase gracias al enfoque práctico y a la atención
+              personalizada. Sin duda lo recomiendo para principiantes y
+              avanzados."
+            </p>
+           
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_2.jpg' %}"
+              class="img_testimonio"
+              alt="Estudiante 2"
+            />
+            <i class='bx  bx-mail-open'  ></i> 
+            <p class="testi-text">
+              "Las explicaciones son muy claras y prácticas. Me ayudaron a
+              entender conceptos que antes me costaban mucho. Todo se enseña con
+              ejemplos útiles y lenguaje sencillo. Sin duda, una excelente forma
+              de aprender música desde cero."
+            </p>
+          
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_3.jpg' %}"
+              class="img_testimonio"
+              alt="Estudiante 3"
+            />
+            <i class='bx  bx-mobile'  ></i> 
+            <p class="testi-text">
+              "Lo recomiendo totalmente para principiantes y avanzados. El
+              contenido está muy bien estructurado y se adapta a todos los
+              niveles. Las clases son dinámicas, con explicaciones fáciles de
+              entender. Me ayudó a progresar mucho más rápido de lo que
+              esperaba."
+            </p>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+      
+        
+
+{% endblock %}

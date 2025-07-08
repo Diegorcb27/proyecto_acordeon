@@ -1,0 +1,76 @@
+.bg-primary {
+  position: relative;
+  background-image: url('/static/core/img/contacto/contacto.jpeg');
+  background-size: cover; /* Mantiene el tamaño adecuado sin recortes */
+  background-position: center 30%; /* Centra la imagen */
+  background-repeat: no-repeat;
+  height: 85vh; /* Mantiene la altura completa */
+  width: 100%; /* Mantiene el ancho completo */;
+}
+
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    color: #ffffff;
+    font-size: 55px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container_1{
+    background-color: #f8f8f8;
+}
+
+.container_2 {
+  background-color: #f2cc39;
+  width: 100%; /* Mantiene el ancho completo */;
+  padding: 15px 0 15px 0;
+  margin-top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.container_3{
+    background-color: #f8f8f8;
+}
+
+.student-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.img_testimonio {
+    width: 300px;
+    height: 300px;  
+    object-fit: cover;
+    border: 5px solid #ffc107; /* Borde dorado */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+.bx {
+    font-size: 50px;
+    color: #ffc107; /* Color dorado */
+    margin-top: 20px;
+}
+
+.testi-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight:400;
+    color: rgb(16, 16, 16);
+    letter-spacing: 0px;
+    font-style: italic;
+}
+
+.student-name{
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight:400;
+  color: rgb(16, 16, 16);
+  margin-top: 10px;
+}
