@@ -4,75 +4,234 @@
 
 <div class="container-fluid container_1" style="padding: 0%">
   <div style="text-align: center">
-    <header class="bg-primary text-white text-center py-5">
-     
-     
-    </header>
+    <header
+      class="header-image bg-primary text-white text-center py-5"
+    ></header>
 
     <section class="container-fluid container_2 text-center">
       <h2 class="title">Contáctenos</h2>
     </section>
 
     <section class="container-fluid container_3 my-5 text-center">
-        <div class="container">
+      <div class="container">
         <div class="row justify-content-center">
           <!-- Testimonio 1 -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 contact-card text-center">
             <img
               src="{% static 'core/img/testimonios/estudiante_1.jpg' %}"
               class="img_testimonio"
               alt="Estudiante 1"
             />
-            <i class='bx  bx-location-alt-2'  ></i> 
+            <i class="bx bx-location-alt-2"></i>
+            <h2>Ubicación</h2>
             <p class="testi-text">
-              "Excelente curso, me ayudó a mejorar rápidamente en mi aprendizaje
-              musical. Las explicaciones son muy claras y fáciles de entender,
-              incluso para quienes comienzan desde cero. Me sentí motivado en
-              cada clase gracias al enfoque práctico y a la atención
-              personalizada. Sin duda lo recomiendo para principiantes y
-              avanzados."
+              433 Barker Cypress Rd, Houston, TX 77094, Estados Unidos
             </p>
-           
           </div>
 
           <!-- Testimonio 2 -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 contact-card text-center">
             <img
               src="{% static 'core/img/testimonios/estudiante_2.jpg' %}"
               class="img_testimonio"
               alt="Estudiante 2"
             />
-            <i class='bx  bx-mail-open'  ></i> 
-            <p class="testi-text">
-              "Las explicaciones son muy claras y prácticas. Me ayudaron a
-              entender conceptos que antes me costaban mucho. Todo se enseña con
-              ejemplos útiles y lenguaje sencillo. Sin duda, una excelente forma
-              de aprender música desde cero."
-            </p>
-          
+            <i class="bx bx-mail-open"></i>
+            <h2>Correo Electrónico</h2>
+            <p class="testi-text">Theaccordionacademy@gmail.com</p>
           </div>
 
           <!-- Testimonio 3 -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 contact-card text-center">
             <img
               src="{% static 'core/img/testimonios/estudiante_3.jpg' %}"
               class="img_testimonio"
               alt="Estudiante 3"
             />
-            <i class='bx  bx-mobile'  ></i> 
-            <p class="testi-text">
-              "Lo recomiendo totalmente para principiantes y avanzados. El
-              contenido está muy bien estructurado y se adapta a todos los
-              niveles. Las clases son dinámicas, con explicaciones fáciles de
-              entender. Me ayudó a progresar mucho más rápido de lo que
-              esperaba."
-            </p>
-    
+            <i class="bx bx-mobile"></i>
+            <h2>Oficina principal</h2>
+            <p class="testi-text">(346) 507-9343</p>
+            <p class="testi-text">(346) 366-9988</p>
           </div>
         </div>
       </div>
-    </section>
-      
-        
 
+      <section
+        class="container-fluid contact-section py-5"
+        style="background-color: #fff9e6"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+              <div
+                class="card border-0 shadow-sm"
+                style="border-radius: 15px; overflow: hidden"
+              >
+                <!-- Encabezado -->
+                <div
+                  class="card-header border-0 py-4"
+                  style="background: #ffc107"
+                >
+                  <h2 class="mb-0 text-center text-dark">
+                    <i class="fas fa-envelope-open-text me-2"></i>Contáctanos
+                  </h2>
+                </div>
+
+                <!-- Cuerpo -->
+                <div
+                  class="card-body p-4 p-md-5"
+                  style="background-color: #fff"
+                >
+                  <form
+                    method="post"
+                    action="{% url 'core:contacto' %}"
+                    class="needs-validation"
+                    novalidate
+                  >
+                    {% csrf_token %}
+
+                    <div class="mb-4">
+                      <label
+                        for="id_nombre"
+                        class="form-label fw-bold"
+                        style="color: #6c757d"
+                        >Nombre completo</label
+                      >
+                      <div class="input-group">
+                        <span
+                          class="input-group-text"
+                          style="
+                            background-color: #fff3cd;
+                            border-color: #ffe69c;
+                          "
+                        >
+                          <i class="fas fa-user text-warning"></i>
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control py-2"
+                          id="id_nombre"
+                          name="nombre"
+                          placeholder="Ej: Juan Pérez"
+                          required
+                          style="border-left: 0; border-color: #ffe69c"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mb-4">
+                      <label
+                        for="id_correo"
+                        class="form-label fw-bold"
+                        style="color: #6c757d"
+                        >Correo electrónico</label
+                      >
+                      <div class="input-group">
+                        <span
+                          class="input-group-text"
+                          style="
+                            background-color: #fff3cd;
+                            border-color: #ffe69c;
+                          "
+                        >
+                          <i class="fas fa-at text-warning"></i>
+                        </span>
+                        <input
+                          type="email"
+                          class="form-control py-2"
+                          id="id_correo"
+                          name="email"
+                          placeholder="ejemplo@email.com"
+                          required
+                          style="border-left: 0; border-color: #ffe69c"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mb-4">
+                      <label
+                        for="id_mensaje"
+                        class="form-label fw-bold"
+                        style="color: #6c757d"
+                        >Tu mensaje</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="id_mensaje"
+                        name="mensaje"
+                        rows="4"
+                        placeholder="Escribe aquí tu consulta..."
+                        required
+                        style="border-color: #ffe69c"
+                      ></textarea>
+                    </div>
+
+                    <div class="d-grid mt-4">
+                      <button
+                        type="submit"
+                        class="btn btn-warning py-3 fw-bold text-white"
+                        style="
+                          background-color: #ffc107;
+                          border: none;
+                          border-radius: 10px;
+                        "
+                      >
+                        <i class="fas fa-paper-plane me-2"></i> ENVIAR MENSAJE
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Pie -->
+                <div
+                  class="card-footer bg-transparent border-0 text-center py-3"
+                >
+                  <p class="mb-0 small" style="color: #adb5bd">
+                    <i class="fas fa-clock me-1" style="color: #ffc107"></i>
+                    Respuesta garantizada en 24 horas
+                  </p>
+                </div>
+              </div>
+              {% if messages %}
+              <div class="mt-3">
+                {% for message in messages %}
+                <div
+                  class="alert alert-{% if message.tags == 'error' %}danger{% else %}success{% endif %}"
+                >
+                  {{ message }}
+                </div>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .form-control:focus,
+        .form-select:focus {
+          border-color: #ffc107 !important;
+          box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25) !important;
+        }
+
+        .btn-warning:hover {
+          background-color: #e0a800 !important;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+          transition: all 0.3s ease;
+        }
+
+        .input-group-text {
+          transition: all 0.3s ease;
+        }
+
+        .input-group:focus-within .input-group-text {
+          background-color: #ffc107 !important;
+          color: white !important;
+        }
+      </style>
+    </section>
+  </div>
+</div>
 {% endblock %}
