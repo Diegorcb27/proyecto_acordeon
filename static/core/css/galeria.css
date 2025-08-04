@@ -1,0 +1,32 @@
+.header-image {
+  position: relative;
+  background-image: url('/static/core/img/galeria/galeria.jpg');
+  background-size: cover; /* Mantiene el tamaño adecuado sin recortes */
+  background-position: center 30%; /* Centra la imagen */
+  background-repeat: no-repeat;
+  height: 85vh; /* Mantiene la altura completa */
+  width: 100%; /* Mantiene el ancho completo */;
+}
+
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    color: #ffffff;
+    font-size: 55px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container_1{
+    background-color: #f8f8f8;
+}
+
+.container_2 {
+  background-color: #f2cc39;
+  width: 100%; /* Mantiene el ancho completo */;
+  padding: 15px 0 15px 0;
+  margin-top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}

@@ -1,4 +1,49 @@
  {% extends 'core/base.html' %} {% load static %} {% block title %} Inicio {% endblock %} {% block content %}
 <link rel="stylesheet" href="{% static 'core/css/galeria.css' %}" />
 
+<div class="container-fluid container_1" style="padding: 0%">
+    <div style="text-align: center">
+        <header class="header-image bg-primary text-white text-center py-5"></header>
+    
+        <section class="container-fluid container_2 text-center">
+        <h2 class="title">Galería</h2>
+        </section>
+    
+        <section class="container-fluid container_3 my-5 text-center">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+            <div class="card h-100">
+                <img src="{% static 'core/img/galeria/imagen1.jpg' %}" class="card-img-top" alt="Imagen 1">
+                <div class="card-body">
+                <h5 class="card-title">Título de la Imagen 1</h5>
+                <p class="card-text">Descripción breve de la imagen 1.</p>
+                </div>
+            </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+            <div class="card h-100">
+                <img src="{% static 'core/img/galeria/imagen2.jpg' %}" class="card-img-top" alt="Imagen 2">
+                <div class="card-body">
+                <h5 class="card-title">Título de la Imagen 2</h5>
+                <p class="card-text">Descripción breve de la imagen 2.</p>
+                </div>
+            </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+            <div class="card h-100">
+                <img src="{% static 'core/img/galeria/imagen3.jpg' %}" class="card-img-top" alt="Imagen 3">
+                <div class="card-body">
+                <h5 class="card-title">Título de la Imagen 3</h5>
+                <p class="card-text">Descripción breve de la imagen 3.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+</div>
+
  {% endblock %}
