@@ -1,49 +1,261 @@
- {% extends 'core/base.html' %} {% load static %} {% block title %} Inicio {% endblock %} {% block content %}
+{% extends 'core/base.html' %} {% load static %} {% block title %} Inicio {% endblock %} {% block content %}
 <link rel="stylesheet" href="{% static 'core/css/galeria.css' %}" />
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
 
-<div class="container-fluid container_1" style="padding: 0%">
+
+  <div class="container-fluid container_1" style="padding: 0%">
     <div style="text-align: center">
-        <header class="header-image bg-primary text-white text-center py-5"></header>
-    
-        <section class="container-fluid container_2 text-center">
+      <header
+        class="header-image bg-primary text-white text-center py-5"
+      ></header>
+
+      <section class="container-fluid container_2 text-center">
         <h2 class="title">Galería</h2>
-        </section>
-    
-        <section class="container-fluid container_3 my-5 text-center">
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-            <div class="card h-100">
-                <img src="{% static 'core/img/galeria/imagen1.jpg' %}" class="card-img-top" alt="Imagen 1">
-                <div class="card-body">
-                <h5 class="card-title">Título de la Imagen 1</h5>
-                <p class="card-text">Descripción breve de la imagen 1.</p>
-                </div>
+      </section>
+
+      <!-- galeria parte 1 -->
+      <section class="container-fluid container_3 my-5 text-center">
+        <div class="container text-center">
+          <div class="row row-cols-3 g-4">
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/im1.JPEG' %}"
+                class="img-fluid"
+                alt=""
+              />
             </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/im2.JPEG' %}"
+                class="img-fluid"
+                alt=""
+              />
             </div>
-            <!-- Card 2 -->
-            <div class="col-md-4">
-            <div class="card h-100">
-                <img src="{% static 'core/img/galeria/imagen2.jpg' %}" class="card-img-top" alt="Imagen 2">
-                <div class="card-body">
-                <h5 class="card-title">Título de la Imagen 2</h5>
-                <p class="card-text">Descripción breve de la imagen 2.</p>
-                </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/im3.JPEG' %}"
+                class="img-fluid"
+                alt=""
+              />
             </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/im4.JPEG' %}"
+                class="img-fluid"
+                alt=""
+              />
             </div>
-            <!-- Card 3 -->
-            <div class="col-md-4">
-            <div class="card h-100">
-                <img src="{% static 'core/img/galeria/imagen3.jpg' %}" class="card-img-top" alt="Imagen 3">
-                <div class="card-body">
-                <h5 class="card-title">Título de la Imagen 3</h5>
-                <p class="card-text">Descripción breve de la imagen 3.</p>
-                </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/im5.JPEG' %}"
+                class="img-fluid"
+                alt=""
+              />
             </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/im6.JPEG' %}"
+                class="img-fluid"
+                alt=""
+              />
             </div>
+          </div>
         </div>
-        </section>
+      </section>
 
-</div>
+      <!-- instagram -->
+      <!-- instagram alineado como las imágenes -->
+      <section class="container-fluid container_2 my-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <a href="https://instagram.com" target="_blank">
+                <ion-icon
+                  name="logo-instagram"
+                  style="font-size: 48px; color: #e1306c"
+                ></ion-icon>
+              </a>
+            </div>
+            <div class="col">
+              <h3>@laacademiadelacordeon</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
- {% endblock %}
+      <!-- galeria parte 2 -->
+      <section class="container-fluid container_4 mb-5 text-center">
+        <div class="container text-center">
+          <!-- Fila 1 -->
+          <div class="row row-cols-4 g-4">
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 1"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 2"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 3"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 4"
+              />
+            </div>
+          </div>
+
+          <!-- Fila 2 -->
+          <div class="row row-cols-4 g-4 mt-3">
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 5"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 6"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 7"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 8"
+              />
+            </div>
+          </div>
+
+          <!-- Fila 3 -->
+          <div class="row row-cols-4 g-4 mt-3">
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 9"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 10"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 11"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 12"
+              />
+            </div>
+          </div>
+
+          <!-- Fila 4 -->
+          <div class="row row-cols-4 g-4 mt-3">
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 13"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 14"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 15"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 16"
+              />
+            </div>
+          </div>
+
+          <!-- Fila 5 -->
+          <div class="row row-cols-4 g-4 mt-3">
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 17"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 18"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 19"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="{% static 'core/img/galeria/galeria.jpg' %}"
+                class="img-fluid"
+                alt="Imagen 20"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+{% endblock %}
