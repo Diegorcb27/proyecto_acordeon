@@ -1,0 +1,231 @@
+/* body{
+  background-color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+} */
+
+.bg-primary {
+  position: relative;
+  background-image: url('/static/core/img/bienvenido.jpeg');
+  background-size: cover; /* Mantiene el tamaño adecuado sin recortes */
+  background-position: center 30%; /* Centra la imagen */
+  background-repeat: no-repeat;
+  height: 85vh; /* Mantiene la altura completa */
+  width: 100%; /* Mantiene el ancho completo */;
+}
+
+.container_1{
+  width: 100%; /* Mantiene el ancho completo */;
+}
+
+.bg-primary::before {
+  content: "";
+  position: absolute;
+  width: 100%; /* Mantiene el ancho completo */;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+  z-index: 1; /* Se mantiene detrás del texto */
+}
+
+
+.texto_bienvenido {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-size:x-large;
+  font-style: normal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Lo coloca encima del fondo */
+  text-align: center;
+  
+}
+
+.title{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400 ;
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.nivel-description, .welcome-description{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400 ;
+  color: #ffffff;
+  font-size: 30px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.card-title, h2{
+    font-family: "Montserrat", sans-serif;
+    color: #212529;
+    font-size: 35px;
+    font-weight:600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100
+}
+
+p{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  color: #212529;
+  font-size: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.curso-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.curso-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+.icono-acordeon {
+  height: 80px;
+  width: auto;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.student-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.academia-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.academia-texto {
+  flex: 1 1 400px;
+  background-color: #ffc107;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.academia-texto h1 {
+  margin-top: 0;
+  font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #212529;
+    font-weight:600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100
+}
+
+.academia-texto h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.academia-texto p {
+  margin-bottom: 1rem;
+}
+
+.academia-texto ul {
+  padding-left: 1.2rem;
+}
+
+.academia-texto li {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  color: #212529;
+  font-size: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.academia-img-contenedor {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.academia-img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.img_testimonio {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffc107; /* Borde dorado */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+.img_comillas {
+  height: 50px;
+  width: auto;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.testi-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight:400;
+    color: rgb(16, 16, 16);
+    letter-spacing: 0px;
+    font-style: italic;
+}
+
+.student-name{
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight:400;
+  color: rgb(16, 16, 16);
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
