@@ -1,5 +1,5 @@
 from django.views.generic.base import TemplateView
-from django.shortcuts import render
+
 from .forms import ContactForm
 
 class HomePageView(TemplateView):
@@ -10,10 +10,8 @@ class ContactPageView(TemplateView):
      template_name = "core/contact.html"
      
 
-from django.shortcuts import render, redirect
+
 from django.core.mail import send_mail
-from .forms import ContactForm
-from django.conf import settings
 from django.views.generic.edit import FormView
 from django.contrib import messages
 
@@ -49,3 +47,6 @@ class ContactoView(FormView):
 
 class GaleryPageView(TemplateView):
     template_name = "core/galeria.html"
+    
+class NosotrosPageView(TemplateView):
+    template_name = "core/nosotros.html"

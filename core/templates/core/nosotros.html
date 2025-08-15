@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %} {% load static %} {% block title %} Inicio {% endblock %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}" />
+
+<div class="container-fluid container_1" style="padding: 0%">
+  <div style="text-align: center">
+    <header
+      class="header-image bg-primary text-white text-center py-5"
+    ></header>
+
+    <section class="container-fluid container_2 text-center">
+      <h2 class="title">Nosotros</h2>
+    </section>
+
+    <section class="container-fluid container_3 my-5 text-center">
+      <div class="container-text text-center">
+        <p class="textos">La Academia del Acordeón es una institución dedicada a la enseñanza y difusión de la música del acordeón, con un enfoque especial en el vallenato. Nuestro objetivo es brindar una educación musical de alta calidad, fomentando el amor por este instrumento y su rica tradición cultural.</p>
+        <p class="textos">Contamos con un equipo de maestros altamente capacitados y apasionados por la música, quienes guían a nuestros estudiantes en su viaje musical, desde principiantes hasta niveles avanzados.</p>
+        <p class="textos">Además de clases regulares, ofrecemos talleres, conciertos y eventos especiales para promover la cultura del acordeón y el vallenato en nuestra comunidad.</p>
+      </div>
+      <div class="container-image text-center">
+            <img
+            src="{% static 'core/img/nosotros/im4.JPEG' %}"
+            class="img-fluid"
+            alt="Imagen representativa de la Academia del Acordeón"
+            />
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}
