@@ -1,0 +1,94 @@
+{% extends 'core/base.html' %} {% load static %} {% block title %} Inicio {% endblock %} {% block content %}
+<link rel="stylesheet" href="{% static 'core/css/cursos.css' %}" />
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+
+<div class="container-fluid container_1" style="padding: 0%">
+  <div style="text-align: center">
+    <header
+      class="header-image bg-primary text-white text-center py-5"
+    ></header>
+
+    <section class="container-fluid container_2 text-center">
+      <h2 class="title">Cursos</h2>
+    </section>
+
+    <div class="container text-center my-5">
+      <div class="row justify-content-center">
+        <div
+          class="col-12 col-sm-6 col-md-4 my-3 d-flex justify-content-center"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="{% static 'core/img/cursos/piano_curso.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Aprende piano de principiante - avanzado
+              </h5>
+              <p class="card-text">
+                te prepararemos para que puedas tocar cualquier canción en piano
+                que desees y además aprenderás teoría musical.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-12 col-sm-6 col-md-4 my-3 d-flex justify-content-center"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="{% static 'core/img/cursos/guitarra_curso.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Aprende a tocar guitarra como un profesional
+              </h5>
+              <p class="card-text">
+                Aprende a tocar guitarra desde cero, acordes básicos, rasgueos y
+                canciones fáciles para principiantes.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-12 col-sm-6 col-md-4 my-3 d-flex justify-content-center"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="{% static 'core/img/cursos/acordeon_curso.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Aprende a tocar el acordeón básico - experto
+              </h5>
+              <p class="card-text">
+                Aprende a tocar el acordeón desde cero, canciones fáciles para
+                principiantes y técnicas avanzadas para expertos.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

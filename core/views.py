@@ -3,11 +3,11 @@ from django.views.generic.base import TemplateView
 from .forms import ContactForm
 
 class HomePageView(TemplateView):
-     template_name = "core/home.html"
+    template_name = "core/home.html"
     
 
 class ContactPageView(TemplateView):
-     template_name = "core/contact.html"
+    template_name = "core/contact.html"
      
 
 
@@ -50,3 +50,7 @@ class GaleryPageView(TemplateView):
     
 class NosotrosPageView(TemplateView):
     template_name = "core/nosotros.html"
+    
+class CursoPageView(TemplateView):
+    template_name = "core/cursos.html"
+    
