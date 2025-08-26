@@ -22,6 +22,13 @@
 .title_1{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    background: #fcecb8; /* tono suave que armoniza con bg-warning */
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     font-weight:500;
     color: black;
     font-size: 55px;

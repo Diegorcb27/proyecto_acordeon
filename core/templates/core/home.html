@@ -23,15 +23,15 @@
         <div class="col-md-4">
           <div class="card curso-card text-dark bg-warning h-100">
             <div class="card-body">
-              <h3 class="card-title">
-                Principiantes
+              <div class="titulo-wrapper">
+                <h3 class="card-title">Principiantes</h3>
                 <img
                   src="{% static 'core/img/acordeon_icono.png' %}"
                   alt="icono_acordeon"
                   class="icono-acordeon"
                 />
-              </h3>
-              <p class="card-text">
+              </div>
+              <p class="card-text mt-3">
                 Aprende los fundamentos del acordeón y mejora tu técnica básica
                 rápidamente.
               </p>
@@ -48,14 +48,17 @@
         <div class="col-md-4">
           <div class="card curso-card text-dark bg-warning h-100">
             <div class="card-body">
-              <h3 class="card-title">
-                Intermedio
-                <img
-                  src="{% static 'core/img/acordeon_icono.png' %}"
-                  alt="icono_acordeon"
-                  class="icono-acordeon"
-                />
-              </h3>
+              <div class="titulo-wrapper">
+                <h3 class="card-title">
+                  Intermedio
+                  <img
+                    src="{% static 'core/img/acordeon_icono.png' %}"
+                    alt="icono_acordeon"
+                    class="icono-acordeon"
+                  />
+                </h3>
+              </div>
+
               <p class="card-text">
                 Mejora tu técnica y repertorio mientras perfeccionas tu estilo
                 musical.
@@ -73,14 +76,17 @@
         <div class="col-md-4">
           <div class="card curso-card text-dark bg-warning h-100">
             <div class="card-body">
-              <h3 class="card-title">
-                Avanzado
-                <img
-                  src="{% static 'core/img/acordeon_icono.png' %}"
-                  alt="icono_acordeon"
-                  class="icono-acordeon"
-                />
-              </h3>
+              <div class="titulo-wrapper">
+                <h3 class="card-title">
+                  Avanzado
+                  <img
+                    src="{% static 'core/img/acordeon_icono.png' %}"
+                    alt="icono_acordeon"
+                    class="icono-acordeon"
+                  />
+                </h3>
+              </div>
+
               <p class="card-text">
                 Domina la ejecución del instrumento a un nivel profesional.
               </p>
@@ -99,24 +105,34 @@
 
     <!-- por que escoger la academia -->
     <section class="academia-section">
-  <div class="academia-texto">
-    <h1>¿Por qué elegir la academia?</h1>
-    <h2>Un historial probado de excelencia</h2>
-    <p>Nuestra misión a tiempo completo es enseñar música mientras fomentamos el carácter, la creatividad, habilidades para la vida y el bienestar en cada estudiante.</p>
-    <ul>
-      <li>Votado “Mejores clases de música en Pearland” ~ Living Magazine</li>
-      <li>Ganador del premio Bravo ~ Pearland Alliance for Arts</li>
-      <li>Premio de Excelencia Fundadora: Heather Scharbor ~ Living Magazine</li>
-      <li>Premio Oro en Community Votes Pearland</li>
-      <li>17 estudiantes con distinción en exámenes ABRSM</li>
-    </ul>
-  </div>
-  <div class="academia-img-contenedor">
-    <img src="{% static 'core/img/escoger_img.JPEG' %}" alt="ACORDEON" class="academia-img">
-  </div>
-</section>
-
-
+      <div class="academia-texto">
+        <h1>¿Por qué elegir la academia?</h1>
+        <h2>Un historial probado de excelencia</h2>
+        <p>
+          Nuestra misión a tiempo completo es enseñar música mientras fomentamos
+          el carácter, la creatividad, habilidades para la vida y el bienestar
+          en cada estudiante.
+        </p>
+        <ul>
+          <li>
+            Votado “Mejores clases de música en Pearland” ~ Living Magazine
+          </li>
+          <li>Ganador del premio Bravo ~ Pearland Alliance for Arts</li>
+          <li>
+            Premio de Excelencia Fundadora: Heather Scharbor ~ Living Magazine
+          </li>
+          <li>Premio Oro en Community Votes Pearland</li>
+          <li>17 estudiantes con distinción en exámenes ABRSM</li>
+        </ul>
+      </div>
+      <div class="academia-img-contenedor">
+        <img
+          src="{% static 'core/img/escoger_img.JPEG' %}"
+          alt="ACORDEON"
+          class="academia-img"
+        />
+      </div>
+    </section>
 
     <!-- Testimonios -->
     <section class="bg-warning py-5">

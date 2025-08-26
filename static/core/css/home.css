@@ -70,7 +70,27 @@
     "wdth" 100;
 }
 
-.card-title, h2{
+ .titulo-wrapper {
+    background: #fff3cd; /* tono suave que armoniza con bg-warning */
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+.card-title{
+    font-family: "Montserrat", sans-serif;
+    color: #212529;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+}
+
+h2{
     font-family: "Montserrat", sans-serif;
     color: #212529;
     font-size: 35px;

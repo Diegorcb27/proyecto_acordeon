@@ -90,7 +90,7 @@
                 <a class="nav-link" href="{% url 'core:cursos' %}">CURSOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'core:galeria' %}">GALERÍAS</a>
+                <a class="nav-link" href="{% url 'core:galeria' %}">GALERÍA</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'core:contacto' %}">CONTACTO</a>
@@ -145,8 +145,8 @@
             <ul class="list-unstyled">
               <li><a href="/" class="text-foot">Inicio</a></li>
               <li><a href="/nosotros" class="text-foot">Nosotros</a></li>
-              <li><a href="/cursos" class="text-foot">Cursos</a></li>
-              <li><a href="/eventos" class="text-foot">Eventos</a></li>
+              <li><a href="{% url 'core:cursos' %}" class="text-foot">Cursos</a></li>
+              <li><a href="{% url 'core:galeria' %}" class="text-foot">Galería</a></li>
               <li><a href="/contacto" class="text-foot">Contacto</a></li>
             </ul>
           </div>
@@ -155,8 +155,7 @@
           <div class="col-md-4 mb-3">
             <h5 class="title-foot text-uppercase">Contáctanos</h5>
             <ul class="list-unstyled text-foot">
-              <li>Church on the Rock Katy</li>
-              <li>433 Barker Cypress Rd, Houston, TX 77094</li>
+              <li>433 Barker Cypress Rd, #206 , Houston, TX 77094</li>
               <li>Teléfono: (0212) 123-4567</li>
               <li>Email: Theaccordionacademy@gmail.com</li>
             </ul>
