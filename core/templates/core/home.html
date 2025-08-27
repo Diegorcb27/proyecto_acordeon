@@ -24,7 +24,7 @@
           <div class="card curso-card text-dark bg-warning h-100">
             <div class="card-body">
               <div class="titulo-wrapper">
-                <h3 class="card-title">Principiantes</h3>
+                <h3 class="card-title">PRINCIPIANTE</h3>
                 <img
                   src="{% static 'core/img/acordeon_icono.png' %}"
                   alt="icono_acordeon"
@@ -50,7 +50,7 @@
             <div class="card-body">
               <div class="titulo-wrapper">
                 <h3 class="card-title">
-                  Intermedio
+                  INTERMEDIO
                   <img
                     src="{% static 'core/img/acordeon_icono.png' %}"
                     alt="icono_acordeon"
@@ -78,7 +78,7 @@
             <div class="card-body">
               <div class="titulo-wrapper">
                 <h3 class="card-title">
-                  Avanzado
+                  AVANZADO
                   <img
                     src="{% static 'core/img/acordeon_icono.png' %}"
                     alt="icono_acordeon"
@@ -135,21 +135,65 @@
     </section>
 
     <!-- Testimonios -->
-    <section class="bg-warning py-5">
-      <div class="container g-3 mb-5 text-center">
+   
+
+    <section class="bg-warning  my-5">
+      <div class="container_testimonio g-3 mb-1 text-center">
         <h2>Lo que dicen nuestros estudiantes</h2>
         <p>"Una experiencia increíble, aprendí mucho en poco tiempo!"</p>
       </div>
+      <div
+        id="carruselTestimonios"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carruselTestimonios"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselTestimonios"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselTestimonios"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselTestimonios"
+            data-bs-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselTestimonios"
+            data-bs-slide-to="4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselTestimonios"
+            data-bs-slide-to="5"
+          ></button>
+        </div>
 
-      <div class="container">
-        <div class="row justify-content-center">
-          <!-- Testimonio 1 -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+        <!-- Testimonios -->
+        <div class="carousel-inner text-center my-5">
+          <div class="carousel-item active">
             <img
               src="{% static 'core/img/testimonios/estudiante_1.jpg' %}"
-              class="img_testimonio"
-              alt="Estudiante 1"
+              class="rounded-circle img_testi mb-3"
+              width="200"
+              height="200"
+              alt="Carlos Méndez"
             />
+            <h5 class="fw-bold">Carlos Méndez</h5>
+            <p class="text-muted">Estudiante avanzado</p>
             <img
               src="{% static 'core/img/testimonios/comillas.png' %}"
               class="img_comillas"
@@ -163,16 +207,17 @@
               personalizada. Sin duda lo recomiendo para principiantes y
               avanzados."
             </p>
-            <p class="student-name"><b>Ana</b></p>
           </div>
-
-          <!-- Testimonio 2 -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+          <div class="carousel-item">
             <img
               src="{% static 'core/img/testimonios/estudiante_2.jpg' %}"
-              class="img_testimonio"
-              alt="Estudiante 2"
+              class="rounded-circle img_testi mb-3"
+              width="200"
+              height="200"
+              alt="Ana Rodríguez"
             />
+            <h5 class="fw-bold">Ana Rodríguez</h5>
+            <p class="text-muted">Nivel intermedio</p>
             <img
               src="{% static 'core/img/testimonios/comillas.png' %}"
               class="img_comillas"
@@ -184,16 +229,17 @@
               ejemplos útiles y lenguaje sencillo. Sin duda, una excelente forma
               de aprender música desde cero."
             </p>
-            <p class="student-name"><b>Lucila</b></p>
           </div>
-
-          <!-- Testimonio 3 -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4 student-card text-center">
+          <div class="carousel-item">
             <img
               src="{% static 'core/img/testimonios/estudiante_3.jpg' %}"
-              class="img_testimonio"
-              alt="Estudiante 3"
+              class="rounded-circle img_testi mb-3"
+              width="200"
+              height="200"
+              alt="Luis Herrera"
             />
+            <h5 class="fw-bold">Luis Herrera</h5>
+            <p class="text-muted">Egresado</p>
             <img
               src="{% static 'core/img/testimonios/comillas.png' %}"
               class="img_comillas"
@@ -206,10 +252,119 @@
               entender. Me ayudó a progresar mucho más rápido de lo que
               esperaba."
             </p>
-            <p class="student-name"><b>Jose</b></p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_3.jpg' %}"
+              class="rounded-circle img_testi mb-3"
+              width="200"
+              height="200"
+              alt="Luis Herrera"
+            />
+            <h5 class="fw-bold">Luis Herrera</h5>
+            <p class="text-muted">Egresado</p>
+            <img
+              src="{% static 'core/img/testimonios/comillas.png' %}"
+              class="img_comillas"
+              alt="comillas"
+            />
+            <p class="testi-text">
+              "Lo recomiendo totalmente para principiantes y avanzados. El
+              contenido está muy bien estructurado y se adapta a todos los
+              niveles. Las clases son dinámicas, con explicaciones fáciles de
+              entender. Me ayudó a progresar mucho más rápido de lo que
+              esperaba."
+            </p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_3.jpg' %}"
+              class="rounded-circle img_testi mb-3"
+              width="200"
+              height="200"
+              alt="Luis Herrera"
+            />
+            <h5 class="fw-bold">Luis Herrera</h5>
+            <p class="text-muted">Egresado</p>
+            <img
+              src="{% static 'core/img/testimonios/comillas.png' %}"
+              class="img_comillas"
+              alt="comillas"
+            />
+            <p class="testi-text">
+              "Lo recomiendo totalmente para principiantes y avanzados. El
+              contenido está muy bien estructurado y se adapta a todos los
+              niveles. Las clases son dinámicas, con explicaciones fáciles de
+              entender. Me ayudó a progresar mucho más rápido de lo que
+              esperaba."
+            </p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{% static 'core/img/testimonios/estudiante_3.jpg' %}"
+              class="rounded-circle img_testi mb-3"
+              width="200"
+              height="200"
+              alt="Luis Herrera"
+            />
+            <h5 class="fw-bold">Luis Herrera</h5>
+            <p class="text-muted">Egresado</p>
+            <img
+              src="{% static 'core/img/testimonios/comillas.png' %}"
+              class="img_comillas"
+              alt="comillas"
+            />
+            <p class="testi-text">
+              "Lo recomiendo totalmente para principiantes y avanzados. El
+              contenido está muy bien estructurado y se adapta a todos los
+              niveles. Las clases son dinámicas, con explicaciones fáciles de
+              entender. Me ayudó a progresar mucho más rápido de lo que
+              esperaba."
+            </p>
           </div>
         </div>
+
+        <!-- Controles -->
+        <button
+          class="carousel-control-prev my-3"
+          type="button"
+          data-bs-target="#carruselTestimonios"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carruselTestimonios"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Esperar a que se cargue el carrusel
+          setTimeout(function () {
+            const carouselItems = document.querySelectorAll(
+              "#carruselTestimonios .carousel-item"
+            );
+            let maxHeight = 0;
+
+            // Encontrar la altura máxima
+            carouselItems.forEach((item) => {
+              if (item.offsetHeight > maxHeight) {
+                maxHeight = item.offsetHeight;
+              }
+            });
+
+            // Aplicar la altura máxima a todos los items
+            carouselItems.forEach((item) => {
+              item.style.minHeight = maxHeight + "px";
+            });
+          }, 500);
+        });
+      </script>
     </section>
 
     <!-- Footer -->
