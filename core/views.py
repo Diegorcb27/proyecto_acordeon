@@ -14,6 +14,7 @@ class ContactPageView(TemplateView):
 from django.core.mail import send_mail
 from django.views.generic.edit import FormView
 from django.contrib import messages
+from django.shortcuts import render
 
 
 #enviar correo con formulario de contacto
@@ -51,6 +52,15 @@ class GaleryPageView(TemplateView):
 class NosotrosPageView(TemplateView):
     template_name = "core/nosotros.html"
     
+    
+    
+    
+    
 class CursoPageView(TemplateView):
     template_name = "core/cursos.html"
+    
+    
+    
+    
+
     
