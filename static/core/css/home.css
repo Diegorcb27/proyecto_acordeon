@@ -234,11 +234,17 @@ p{
 
 .testi-text{
     font-family: "Open Sans", sans-serif;
+    width: 50%;
+    text-align: center;
     font-size: 18px;
     font-weight:400;
     color: rgb(16, 16, 16);
     letter-spacing: 0px;
     font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+
 }
 
  #carruselTestimonios .carousel-control-prev-icon,
